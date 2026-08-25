@@ -20,8 +20,11 @@ function Footer() {
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: { xs: 'flex-start', sm: 'center' }, flexDirection: { xs: 'column', sm: 'row' }, gap: 3, mb: 4 }}>
           <Box>
             <Typography variant="h6" sx={{ fontWeight: 600 }}>Mao Doudell</Typography>
+            <Typography variant="body2" sx={{ color: 'primary.main', mt: 0.5 }}>
+              Flutter & Backend Developer
+            </Typography>
             <Typography variant="body2" sx={{ color: 'text.secondary', mt: 0.5 }}>
-              Building digital experiences with passion and precision.
+              Building and maintaining mobile applications, APIs, and production systems.
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
@@ -35,10 +38,7 @@ function Footer() {
         <Divider sx={{ mb: 3 }} />
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexDirection: { xs: 'column', sm: 'row' }, gap: 1 }}>
           <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-            © {new Date().getFullYear()} Mao Doudell. All rights reserved.
-          </Typography>
-          <Typography variant="caption" sx={{ color: 'text.secondary', opacity: 0.7 }}>
-            Designed & Built with React + TypeScript
+            © 2026 Mao Doudell. All Rights Reserved.
           </Typography>
         </Box>
       </Container>

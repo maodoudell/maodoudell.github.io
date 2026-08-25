@@ -4,6 +4,9 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
+import Chip from '@mui/material/Chip';
+
+const techStack = ['Flutter', 'Dart', 'Java Spring Boot', 'React', 'PostgreSQL', 'Firebase', 'Linux'];
 
 function Hero() {
   return (
@@ -18,19 +21,35 @@ function Hero() {
               Mao Doudell
             </Typography>
             <Typography variant="h4" sx={{ color: 'text.secondary', fontWeight: 400, mb: 3 }}>
-              Full Stack Developer
+              Flutter & Backend Developer
             </Typography>
-            <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8, mb: 4, maxWidth: 500 }}>
-              Specializing in robust full-stack architectures, high-performance
-              distributed systems, and elegant user interfaces. I turn complex
-              problems into scalable digital realities.
+            <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8, mb: 3, maxWidth: 500 }}>
+              Over five years building cross-platform Flutter applications and two years developing Java Spring Boot APIs and backend services.
             </Typography>
+            <Box sx={{ mb: 4 }}>
+              <Typography variant="caption" sx={{ color: 'text.secondary', textTransform: 'uppercase', letterSpacing: 1, display: 'block', mb: 1 }}>
+                Tech Stack
+              </Typography>
+              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
+                {techStack.map((tech) => (
+                  <Chip
+                    key={tech}
+                    label={tech}
+                    size="small"
+                    sx={{ bgcolor: 'rgba(59,130,246,0.15)', color: 'primary.main', fontFamily: 'monospace', fontSize: 12 }}
+                  />
+                ))}
+              </Box>
+            </Box>
             <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-              <Button variant="contained" size="large" href="#projects">
+              <Button variant="contained" size="large" href="/cv.pdf" download>
+                Download CV
+              </Button>
+              <Button variant="outlined" size="large" href="#projects">
                 View Projects
               </Button>
               <Button variant="outlined" size="large" href="#contact">
-                Get In Touch →
+                Contact Me
               </Button>
             </Box>
           </Grid>
@@ -47,7 +66,7 @@ function Hero() {
                 mx: 'auto',
               }}
             >
-              <Box sx={{ display: 'flex', gap: 1, px: 2, py: 1.5, bgcolor: 'rgba(0,0,0,0.3)', alignItems: 'center' }}>
+              <Box sx={{ display: 'flex', gap: 1, px: 2, py: 1.5, bgcolor: 'rgba(0,0,0,0.05)', alignItems: 'center' }}>
                 <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: '#ff5f56' }} />
                 <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: '#ffbd2e' }} />
                 <Box sx={{ width: 12, height: 12, borderRadius: '50%', bgcolor: '#27ca40' }} />
@@ -62,12 +81,13 @@ function Hero() {
                 >
 {`const developer = {
   name: "Mao Doudell",
-  role: "Full Stack Developer",
+  role: "Flutter & Backend Developer",
   skills: [
-    "React", "TypeScript",
-    "Node.js", "AWS"
+    "Flutter", "Spring Boot",
+    "React", "PostgreSQL"
   ],
-  passion: "Building scalable apps",
+  experience: "5+ years",
+  impact: "5,000+ LMS users",
   available: true
 };`}
                 </Typography>

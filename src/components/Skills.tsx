@@ -11,10 +11,41 @@ import ListItemText from '@mui/material/ListItemText';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const skillCategories = [
-  { title: 'Frontend', icon: '🎨', skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'HTML/CSS'] },
-  { title: 'Backend', icon: '⚙️', skills: ['Node.js', 'Python', 'Express', 'REST APIs', 'GraphQL'] },
-  { title: 'Database', icon: '🗄️', skills: ['PostgreSQL', 'MongoDB', 'Redis', 'DynamoDB'] },
-  { title: 'DevOps & Cloud', icon: '☁️', skills: ['AWS', 'Docker', 'CI/CD', 'Terraform', 'GitHub Actions'] },
+  {
+    title: 'Mobile Development',
+    icon: '📱',
+    skills: ['Flutter', 'Dart', 'React', 'TypeScript'],
+  },
+  {
+    title: 'Backend',
+    icon: '⚙️',
+    skills: ['Java', 'Spring Boot', 'Python', 'Laravel'],
+  },
+  {
+    title: 'Monitoring & Security',
+    icon: '🛡️',
+    skills: ['Grafana', 'Fail2ban', 'API Gateway'],
+  },
+  {
+    title: 'Database',
+    icon: '🗄️',
+    skills: ['PostgreSQL', 'MySQL', 'MariaDB', 'Firestore', 'Redis'],
+  },
+  {
+    title: 'Infrastructure',
+    icon: '☁️',
+    skills: ['Linux', 'Nginx', 'CI/CD', 'Deployment', 'Monitoring', 'Database Backup'],
+  },
+  {
+    title: 'Messaging',
+    icon: '📡',
+    skills: ['Kafka', 'Debezium', 'Firebase Cloud Messaging', 'ActiveMQ', 'MQTT', 'WebSocket'],
+  },
+  {
+    title: 'Testing & AI',
+    icon: '🧪',
+    skills: ['Unit Testing', 'JMeter', 'Locust', 'Load Testing', 'Stress Testing', 'Codex', 'Antigravity', 'Kiro', 'LLM Integration'],
+  },
 ];
 
 function Skills() {
@@ -29,7 +60,7 @@ function Skills() {
         </Typography>
         <Grid container spacing={3}>
           {skillCategories.map((category) => (
-            <Grid size={{ xs: 12, sm: 6, md: 3 }} key={category.title}>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={category.title}>
               <Card elevation={0} sx={{ height: '100%', border: 1, borderColor: 'divider', transition: 'border-color 0.3s, transform 0.2s', '&:hover': { borderColor: 'primary.main', transform: 'translateY(-4px)' } }}>
                 <CardContent sx={{ p: 3 }}>
                   <Typography sx={{ fontSize: 32, mb: 1 }}>{category.icon}</Typography>

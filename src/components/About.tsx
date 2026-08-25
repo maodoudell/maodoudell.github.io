@@ -4,12 +4,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 
-const metrics = [
-  { value: '5+', label: 'Years Experience' },
-  { value: '30+', label: 'Projects Completed' },
-  { value: '10+', label: 'Technologies' },
-];
-
 function About() {
   return (
     <Box component="section" id="about" sx={{ py: { xs: 8, md: 12 } }}>
@@ -28,7 +22,7 @@ function About() {
                 borderRadius: 4,
                 border: 1,
                 borderColor: 'divider',
-                background: 'linear-gradient(135deg, #1f2028, rgba(59, 130, 246, 0.1))',
+                background: 'linear-gradient(135deg, #f0f4ff, rgba(59, 130, 246, 0.1))',
               }}
             >
               <Typography sx={{ fontSize: 80 }}>👨‍💻</Typography>
@@ -39,30 +33,20 @@ function About() {
               About Me
             </Typography>
             <Typography variant="h3" sx={{ mb: 3, fontSize: { xs: '1.75rem', md: '2.25rem' } }}>
-              Crafting Digital Experiences with Precision
+              Flutter & Backend Developer
             </Typography>
             <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8, mb: 2 }}>
-              With a strong foundation in software engineering, I bring ideas to life
-              through clean, efficient code. I'm passionate about creating applications
-              that not only work flawlessly but also provide exceptional user experiences.
+              I'm a Flutter and Backend Developer with over five years of experience building and maintaining cross-platform mobile applications and two years of experience developing RESTful APIs and backend services with Java Spring Boot.
             </Typography>
-            <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8, mb: 4 }}>
-              My approach combines technical expertise with creative problem-solving.
-              Whether it's architecting a cloud-native solution or refining a pixel-perfect
-              UI, I focus on delivering quality that stands the test of time.
+            <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8, mb: 2 }}>
+              I developed and maintain AIS-LMS, a learning management platform serving more than 5,000 active students, teachers, and parents. My work covers mobile development, microservices, video streaming, system integrations, messaging, testing, and production support.
             </Typography>
-            <Box sx={{ display: 'flex', gap: { xs: 3, md: 5 }, flexWrap: 'wrap' }}>
-              {metrics.map((m) => (
-                <Box key={m.label}>
-                  <Typography variant="h4" sx={{ color: 'primary.main', fontWeight: 600 }}>
-                    {m.value}
-                  </Typography>
-                  <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    {m.label}
-                  </Typography>
-                </Box>
-              ))}
-            </Box>
+            <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8, mb: 2 }}>
+              I have published and maintained applications across the Apple App Store and Google Play Store, and I manage Linux hosting, Nginx, CI/CD pipelines, monitoring, and database backups.
+            </Typography>
+            <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.8 }}>
+              My experience also includes Firebase, PostgreSQL, real-time systems, performance testing with JMeter and Locust, and AI-assisted development workflows.
+            </Typography>
           </Grid>
         </Grid>
       </Container>
