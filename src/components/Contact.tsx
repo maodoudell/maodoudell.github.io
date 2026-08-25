@@ -8,7 +8,6 @@ import Paper from '@mui/material/Paper';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import IconButton from '@mui/material/IconButton';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LanguageIcon from '@mui/icons-material/Language';
 
@@ -79,9 +78,17 @@ function Contact() {
                 </Box>
               </Box>
               <Box sx={{ display: 'flex', gap: 1, mt: 2 }}>
-                <IconButton href="https://github.com/maodoudell" target="_blank" rel="noopener noreferrer" sx={{ border: 1, borderColor: 'divider', '&:hover': { borderColor: 'primary.main' } }} aria-label="GitHub">
+                <Typography
+                  variant="body2"
+                  component="a"
+                  href="https://github.com/maodoudell"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ display: 'inline-flex', alignItems: 'center', gap: 1, color: 'text.primary', textDecoration: 'none', '&:hover': { color: 'primary.main' } }}
+                >
                   <GitHubIcon sx={{ fontSize: 20 }} />
-                </IconButton>
+                  https://github.com/maodoudell
+                </Typography>
               </Box>
             </Box>
           </Grid>
